@@ -1,7 +1,6 @@
+import ServicesContent from "../components/Contents/ServicesContent";
 
 
 export default function Services() {
-  return (
-    <div>Services</div>
-  )
+  return <ServicesContent />
 }
