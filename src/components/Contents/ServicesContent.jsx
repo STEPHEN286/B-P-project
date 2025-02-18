@@ -1,9 +1,10 @@
-import Hero from "../Hero";
+import Hero from "../hero/Hero";
 import sevicesBg  from  "../../assets/img/services.jpeg"
 import Card from "../Card";
 import { ChartBarIcon } from "@heroicons/react/24/outline";
 import { DevicePhoneMobileIcon, DocumentTextIcon, ShareIcon } from "@heroicons/react/24/solid";
 import Button from "../Ui/Button";
+import HeroContent from "../hero/HeroContent";
 
 
 export default function ServicesContent() {
@@ -33,20 +34,18 @@ export default function ServicesContent() {
   return (
     <div>
       <Hero bgImage={sevicesBg}>
-        <h1 className="text-5xl font-bold w-200">Transform Your Business with Expert Digital Marketing</h1>
-        <p className="text-md  w-200">
-          Unlock the full potential of your business with our expert digital
+        <HeroContent title="Transform Your Business with Expert Digital Marketing" subtitle=" Unlock the full potential of your business with our expert digital
           marketing services. Whether you're looking to improve your search
           rankings, grow your social media presence, or create a professional
-          website, we have the right solution for you!
-        </p>
+          website, we have the right solution for you!"/>
+       
       </Hero>
 
         <div className="bg-white h-fit py-24">
-              <div className="flex space-y-8 flex-col items-center justify-center h-full">
+              <div className="container mx-auto flex space-y-8 flex-col items-center justify-center h-full">
                 <h1 className="font-bold text-2xl">Our Mission & Vision</h1>
       
-                <div className="flex space-x-8  mt-9">
+                <div className="grid  gap-7 md:grid-cols-4  mt-9 px-5">
                   {services.map((value) => (
                     <Card
                       key={value.title}

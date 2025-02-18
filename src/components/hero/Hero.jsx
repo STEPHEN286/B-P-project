@@ -1,7 +1,7 @@
 export default function Hero({ bgImage, children }) {
     return (
         <div
-            className={`bg-cover bg-center  flex items-center justify-center  w-full h-[650px] relative`}
+            className={`bg-cover bg-center  flex items-center justify-center  w-full h-[400px] md:h-[650px] relative`}
             style={{ backgroundImage: `url(${bgImage})` }}
         >
         
