@@ -1,10 +1,12 @@
+import { lazy } from "react";
 import heroBg from "../../assets/img/landing.jpeg";
 import Card from "../Card";
-import Testimonial from "../carousel/Swipper";
+// import Testimonial from "../carousel/Swipper";
 
 import Hero from "../hero/Hero";
 import HeroContent from "../hero/HeroContent";
 import Button from "../Ui/Button";
+
 
 import {
   ChartBarIcon,
@@ -13,6 +15,7 @@ import {
   DocumentTextIcon,
 } from "@heroicons/react/24/outline";
 
+const Testimonial = lazy(() => import("../carousel/Swipper"));
 const services = [
   {
     title: "SEO Optimization",
@@ -75,7 +78,7 @@ export default function HomePageContent() {
               <h1 className="font-bold text-2xl">Get in Touch </h1>
               <p className="text-[#9CA3AF]">Ready to transform your business</p>
          </div>
-          <div className="flex space-x-2  w-full">
+          <div className="flex space-x-2 justify-center  w-full">
             <input
               type="email"
               name=""
@@ -83,7 +86,7 @@ export default function HomePageContent() {
               placeholder="enter your mail"
               className=" w-[400px] rounded border-[#9CA3AF] border-1 py-3 px-2 "
             />
-            <Button butttontext="Subscribe" className={"bg-[#001AFF] p-3 "} />
+            <Button butttontext="Subscribe" className={"bg-[#001AFF] text-white p-3 "} />
           </div>
         </div>
       </div>

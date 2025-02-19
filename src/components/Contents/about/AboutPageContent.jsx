@@ -1,71 +1,13 @@
-import Hero from "../hero/Hero";
-import aboutBg from "../../assets/img/about.avif";
-import Card from "../Card";
-import { LightBulbIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
-import TeamCard from "../cards/TeamCard";
-import CounterCard from "../cards/CounterCard";
+import Hero from "../../hero/Hero";
+import aboutBg from "../../../assets/img/about.avif";
+import Card from "../../Card";
 
-import HeroContent from "../hero/HeroContent";
-import BerniceImg from "../../assets/img/bernice.jpg";
-import PrinceImg from "../../assets/img/prince.jpg";
-import WaccoImg from "../../assets/img/wacco.jpg";
-import KwaakyewaaImg from "../../assets/img/Kwakyewaa.jpg";
-const companyValues = [
-  {
-    title: "Mission",
-    description:
-      "To empower businesses with innovative digital marketing strategies that enhance brand visibility and drive growth.",
-    icon: RocketLaunchIcon, // Heroicon for mission
-  },
-  {
-    title: "Vision",
-    description:
-      "To be a leading digital marketing agency known for excellence, creativity, and results-driven solutions.",
-    icon: LightBulbIcon, // Heroicon for vision
-  },
-];
+import TeamCard from "../../cards/TeamCard";
+import CounterCard from "../../cards/CounterCard";
 
-const teamMembers = [
-  {
-    name: "Bernice,",
-    role: "CEO & Digital Strategist",
-    image: BerniceImg,
-  },
-  {
-    name: "Prince",
-    role: "Marketing Director",
-    image: PrinceImg,
-  },
-  {
-    name: "Wacco,",
-    role: "Lead Web Developer",
-    image: WaccoImg,
-  },
-  {
-    name: "Kwaakyewaa",
-    role: "Social Media Manager",
-    image: KwaakyewaaImg,
-  },
-];
+import HeroContent from "../../hero/HeroContent";
+import { companyValues, teamMembers, whyChooseUs } from "./about-data";
 
-const whyChooseUs = [
-  {
-    number: 98,
-    description: "Client Success Rate",
-  },
-  {
-    number: 200,
-    description: "Projects Completed",
-  },
-  {
-    number: 10,
-    description: "Team Experts",
-  },
-  {
-    number: 50,
-    description: "Years Experience",
-  },
-];
 export default function AboutPageContent() {
   //    function handleOnEnter () {
   //     setCouterOn(true)
@@ -109,6 +51,7 @@ export default function AboutPageContent() {
                 name={member.name}
                 image={member.image}
                 role={member.role}
+                
               />
             ))}
           </div>
@@ -124,6 +67,7 @@ export default function AboutPageContent() {
                 key={item.description}
                 description={item.description}
                 number={item.number}
+                memo={true}
               />
             ))}
           </div>
