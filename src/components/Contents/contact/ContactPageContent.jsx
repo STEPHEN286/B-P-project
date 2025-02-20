@@ -1,9 +1,9 @@
-import Hero from "../hero/Hero";
-import contactBg from "../../assets/img/pexels-photo-7688173.jpeg";
-import HeroContent from "../hero/HeroContent";
-import InputGroup from "../Ui/Input-Group";
-import ContactInfo from "../ContactInfo";
-import Button from "../Ui/Button";
+import Hero from "../../hero/Hero";
+import contactBg from "../../../assets/img/pexels-photo-7688173.jpeg";
+import HeroContent from "../../hero/HeroContent";
+import InputGroup from "../../Ui/Input-Group";
+import ContactInfo from "./ContactInfo";
+
 
 export default function ContactPageContent() {
   return (
@@ -46,8 +46,8 @@ export default function ContactPageContent() {
                   <ContactInfo
                     icon="fas fa-envelope"
                     title="Email"
-                    content="wacco@gmail.com"
-                    link="mailto:wacco@gmail.com"
+                    content="bandg@gmail.com"
+                    link="mailto:bandg@gmail.com"
                   />
                 </div>
                 <div className="mt-8">

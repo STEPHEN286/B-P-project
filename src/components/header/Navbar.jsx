@@ -23,7 +23,7 @@ export default function Navbar() {
         <div>
           <h3>
             <Link to="/" className="text-xl font-bold text-blue-600">
-              B&G
+              B&G Digital
             </Link>
           </h3>
         </div>
