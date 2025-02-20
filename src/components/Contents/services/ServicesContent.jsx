@@ -50,7 +50,7 @@ export default function ServicesContent() {
               ))}
             </div>
 
-            <div className="  flex flex-col space-y-2 justify-center items-center">
+            <div className="flex px-5 flex-col space-y-2 justify-center items-center">
               <p className="text-[#9CA3AF]">
                 Ready to take your business to the next level? Contact us today
                 for a free consultation!
